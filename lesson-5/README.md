@@ -181,16 +181,7 @@ greet()  # Uses the default value
 greet("Bob")  # Overrides the default value
 ```
 
-### **5. Lambda Functions (Anonymous Functions)**
-
-Lambda functions are small, anonymous functions defined using the `lambda` keyword:
-
-```python
-multiply = lambda x, y: x * y
-print(multiply(2, 3))
-```
-
-### **6. Higher-Order Functions**
+### **5. Higher-Order Functions**
 
 Python allows functions to be passed as arguments to other functions. These are called higher-order functions:
 
@@ -203,7 +194,7 @@ result = apply(add, 10, 20)
 print(f"Result: {result}")
 ```
 
-### **7. Recursive Functions**
+### **6. Recursive Functions**
 
 A function can call itself. This is useful for solving problems that can be broken down into smaller subproblems:
 
@@ -218,26 +209,3 @@ def factorial(n):
 print(factorial(5))  # 5! = 120
 ```
 
-### **8. Scope and Lifetime of Variables**
-
-- Variables defined inside a function have local scope.
-- Variables defined outside functions have global scope.
-
-### **9. Decorators**
-
-Decorators are functions that modify other functions. They are often used for logging, authentication, and more:
-
-```python
-def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
-
-@my_decorator
-def say_hello():
-    print("Hello!")
-
-say_hello()
-```
