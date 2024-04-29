@@ -64,3 +64,23 @@ except FileNotFoundError:
 - **Writing ('w'):** Allows you to write to the file.
 - **Appending ('a'):** Allows you to add content to the end of the file.
 
+
+
+Summarize the I/O behaviors:
+
+|          Mode          |  r   |  r+  |  w   |  w+  |  a   |  a+  |
+| :--------------------: | :--: | :--: | :--: | :--: | :--: | :--: |
+|          Read          |  +   |  +   |      |  +   |      |  +   |
+|         Write          |      |  +   |  +   |  +   |  +   |  +   |
+|         Create         |      |      |  +   |  +   |  +   |  +   |
+|         Cover          |      |      |  +   |  +   |      |      |
+| Point in the beginning |  +   |  +   |  +   |  +   |      |      |
+|    Point in the end    |      |      |      |      |  +   |  +   |
+
+Decision tree for the table above:
+
+
+[![][1]][1]
+
+
+  [1]: https://i.stack.imgur.com/xVhm8.png
