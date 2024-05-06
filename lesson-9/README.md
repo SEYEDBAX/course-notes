@@ -45,6 +45,7 @@
     pattern = r"\d{3}-\d{2}-\d{4}"  # Example: Social Security Number pattern
     result = re.match(pattern, input_string)
     ```
+site : [for more](https://www.dataquest.io/blog/regular-expressions-data-scientists/)
 
 - **Example**:
     ```python
