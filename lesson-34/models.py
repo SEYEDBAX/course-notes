@@ -20,3 +20,13 @@ class Order(Base):
     user_id = Column(Integer, ForeignKey('users.id'))
 
     user = relationship("User", back_populates="orders")
+
+
+class Contact(Base):
+    __tablename__ = 'contacts'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    phone = Column(String)
+    email = Column(String)
+    address = Column(String)
