@@ -11,8 +11,7 @@ console = Console()
 class ContactManager:
 
     def __init__(self):
-        Session = sessionmaker(bind=engine)
-        self.session = Session()
+        self.session = sessionmaker(bind=engine)()
 
     def add_contact(self, name, phone, email=None, address=None):
         if self.session.query(Contact).filter(Contact.name == name).first():
